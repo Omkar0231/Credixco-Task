@@ -125,7 +125,7 @@ __Q6. Students must be able to see his information only__
 
 The Token received when the teacher is logged in through Q2.(above), paste it in the request headers like :
 { 
-    'Authorization' : 'jwt __Received token__'
+    'Authorization' : 'jwt __Received_token_when_logged_in__'
 }
 link : http://localhost:8000/users/get-student-profile/
 request_method : GET
