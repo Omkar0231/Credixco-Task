@@ -39,6 +39,9 @@ class AddUsersAPIView(CreateAPIView):
                 elif role=='STUDENT':
                     group, created = Group.objects.get_or_create(name='Students')
                 elif role=='SUPER_ADMIN':
+                    user.is_staff = True
+                    user.is_admin = True
+                    user.save()
                     group, created = Group.objects.get_or_create(name='Super_Admin')
                 
                 group.user_set.add(user)

@@ -42,7 +42,6 @@ class SignUpAPIView(CreateAPIView):
                 date_of_birth = date_of_birth.date()
                 if date_of_birth >= datetime.date.today(): 
                     return Response({'error':'Please enter a valid Date of Birth'})
-                data['date_of_birth'] = f'{date_of_birth.year}-{date_of_birth.month}-{date_of_birth.day}'
                 
                 #Saving the user object after all validations
                 user = serializer.save(validated_data=data)
@@ -53,6 +52,9 @@ class SignUpAPIView(CreateAPIView):
                 elif role=='STUDENT':
                     group, created = Group.objects.get_or_create(name='Students')
                 elif role=='SUPER_ADMIN':
+                    user.is_staff = True
+                    user.is_admin = True
+                    user.save()
                     group, created = Group.objects.get_or_create(name='Super_Admin')
                 
                 #Adding the user to the respective group according to the given role
