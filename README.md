@@ -1,4 +1,4 @@
-# Important Points to be Done before executing the Project
+# Important points to be done before executing the Project
 
 __Step 1 :__ First create  a virtual environment and install all the packages
 in requirements.txt using, 
@@ -15,7 +15,8 @@ passwords section will be availble under the same section and generate one and u
 
 __Finally,__ the project runs smoothly as per the requirements mentioned in the task.
 
-# API Links
+
+# API Documentation
 
 __Q1. User Sign Up/Forgot Password APIs__
 __User SignUp__
