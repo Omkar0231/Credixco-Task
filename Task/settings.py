@@ -161,9 +161,10 @@ EMAIL_PORT = 587
 
 '''
 Here you have to put your GOOGLE_APP_PASSWORD. You can get it from here
-https://myaccount.google.com/security . You need to complete the 
--step verification under the <Signing in to Google> section. Then the app 
-passwords section will open and generate one and use that password here.
+https://myaccount.google.com/security . You need to complete the 2-step
+verification under the <Signing in to Google> section. Then the app 
+passwords section will be availble under the same section and generate 
+one and use that password here.
 '''
 EMAIL_HOST_PASSWORD = "<GOOGLE_APP_PASSWORD>"
 
