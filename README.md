@@ -1,4 +1,4 @@
-# Important Points to be Done before executing the Project
+# Important points to be done before executing the Project
 
 __Step 1 :__ First create  a virtual environment and install all the packages
 in requirements.txt using, 
